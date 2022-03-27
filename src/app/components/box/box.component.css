@@ -2,6 +2,20 @@
     margin-top: -22px;
     width: 60vw;
     height: 80vh;
-    
     background-color: rgba(238, 238, 238, 0.966);
+}
+#entete>span{
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#entete{
+    padding: 20px;
+    background-color: #142154;
+    color: white;
+}
+#corps{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
