@@ -19,6 +19,7 @@ export class BoxComponent implements OnInit {
   }
 
   setIri(){
+    if(this.montant==null) {this.montant=0;}
     this.iri.getIri(this.montant).subscribe(
       (mensuel)=>{ 
         this.iriMensuel=mensuel ;
