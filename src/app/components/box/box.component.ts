@@ -7,7 +7,7 @@ import { faCircleQuestion} from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./box.component.css']
 })
 export class BoxComponent implements OnInit {
-  
+  montant : number =0;
   faCircleQuestion=faCircleQuestion;
 
   constructor() { }

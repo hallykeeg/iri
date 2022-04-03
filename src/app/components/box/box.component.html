@@ -8,13 +8,13 @@
     </section>
 
     <section id="corps"> 
-        <span>Revenu annuel</span>
-        <span> le montant que vous gagnez sur une base annuelle </span>
+        <span id="titre">Revenu annuel</span>
+        <span id="description"> Le montant que vous gagnez sur une base annuelle. </span>
         <section>
-            <input type="number" name="" id="">
+            <input type="number" min="0" step="0.01" [(ngModel)]="montant" id="" >
             <label> gourdes. </label>
         </section>
-        <input type="range" name="" id="">
+        <input type="range" min="0" max="9000000000" [(ngModel)]="montant" id="range">
     </section>
     <hr> 
     <section id="resultat"> 
