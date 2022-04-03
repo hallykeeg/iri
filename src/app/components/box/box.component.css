@@ -1,6 +1,6 @@
 #container{
-    margin-top: -22px;
-    width: 60vw;
+    /* margin-top: 22px; */
+    width: 45vw;
     height: 80vh;
     background-color: rgba(238, 238, 238, 0.966);
 }
@@ -14,14 +14,16 @@
     background-color: #142154;
     color: white;
 }
-#corps{
+#corps{ border-bottom: 10px solid lightgray ;}
+#corps, #resultat{
     display: flex;
     flex-direction: column;
     padding: 20px;
+   
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
-#corps>#titre{
+#corps>#titre, #resultat>#titre2{
     font-weight: bolder;
     font-size: 14px;
     margin-bottom: 10px;
@@ -31,5 +33,20 @@
     margin-bottom: 15px;
 }
 #range{
-    width: 50%;
+    background-color: #142154;
+}
+hr{
+    
+    background-color: #142154;
+}
+.grey-back-text{
+    background-color: lightgray;
+    padding: 20px;
+}
+.left-bord-blue{
+    border-left: 10px solid #142154 ;
+
+}
+.left-margin{
+    margin-left: 10px;
 }
