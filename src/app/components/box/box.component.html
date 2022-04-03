@@ -11,16 +11,16 @@
         <span id="titre">Revenu mensuel</span>
         <span id="description"> Le montant brut que vous gagnez chaque mois. </span>
         <section class="grey-back-text">
-            <input type="number" min="0" step="0.01" [(ngModel)]="montant" id="" >
+            <input (change)="setIri()" type="number" min="0" step="0.01" [(ngModel)]="montant" id="" >
             <label> gourdes. </label>
         </section>
-       <input type="range" min="0" max="8000000" [(ngModel)]="montant" id="range">
+       <input (change)="setIri()" type="range" min="0" max="8000000" [(ngModel)]="montant" id="range">
     </section>
    
     <section id="resultat"> 
-        <span id="titre2">IRI à verser</span>
+        <span id="titre2">IRI mensuel à verser</span>
         <section class="grey-back-text left-bord-blue">
-            <span> 22,520</span>
+            <span> {{iriMensuel}}</span>
             <label class="left-margin">gourdes.</label>
         </section>
     </section>
